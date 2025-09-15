@@ -175,6 +175,13 @@ typedef NS_ENUM(NSInteger, CRBoxTextChangeType) {
     }
 }
 
+// 替换显示V1.3.6
+- (void)replaceCellPropertyArr {
+    [self.cellPropertyArr removeAllObjects];
+    [self generateCellPropertyArr];
+    [self.mainCollectionView reloadData];
+}
+
 #pragma mark - code Length 调整
 - (void)resetCodeLength:(NSInteger)codeLength beginEdit:(BOOL)beginEdit
 {

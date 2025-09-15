@@ -162,4 +162,7 @@ default: @""
 // Init
 - (instancetype _Nullable )initWithCodeLength:(NSInteger)codeLength;
 
+// 替换显示V1.3.6
+- (void)replaceCellPropertyArr;
+
 @end
